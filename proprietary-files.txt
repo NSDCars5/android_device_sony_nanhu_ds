@@ -4,6 +4,7 @@ bin/gpu_dcvsd
 bin/hci_qcomm_init
 bin/hciattach
 bin/mm-qcamera-daemon
+bin/magnetic
 bin/netmgrd
 bin/nvcustomizer
 bin/qmuxd
