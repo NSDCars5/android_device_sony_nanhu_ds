@@ -213,7 +213,7 @@ public class SonyQualcommRIL7x27a extends RIL implements CommandsInterface {
                 + strings.length + " strings, expected multible of 5");
         }
 
-        ret = new ArrayList<OperatorInfo>(strings.length / 5);
+        ret = new ArrayList<OperatorInfo>(strings.length / 4);
 
         for (int i = 0 ; i < strings.length ; i += 5) {
             ret.add (
@@ -221,8 +221,7 @@ public class SonyQualcommRIL7x27a extends RIL implements CommandsInterface {
                     strings[i+0],
                     strings[i+1],
                     strings[i+2],
-                    strings[i+3],
-                    strings[i+4]));
+                    strings[i+3]));
         }
         return ret;
     }
