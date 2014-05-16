@@ -38,7 +38,6 @@ PRODUCT_COPY_FILES += \
     device/sony/nanhu/config/audio_policy.conf:system/etc/audio_policy.conf \
     device/sony/nanhu/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
     device/sony/nanhu/config/init.device.rc:root/init.device.rc \
-    device/sony/nanhu/config/init.recovery.device.rc:root/init.recovery.device.rc \
     device/sony/nanhu/../tamsui-common/prebuilt/logo_M.rle:root/logo.rle
 
 # USB function switching
