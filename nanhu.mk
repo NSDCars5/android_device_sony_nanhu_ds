@@ -52,12 +52,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/sony/nanhu/config/vold.fstab:system/etc/vold.fstab
 
-PRODUCT_COPY_FILES += \
-    device/sony/nanhu/config/init.bluetooth.sh:system/etc/init.bluetooth.sh
-
-PRODUCT_PACKAGES += \
-    hciattach
-
 # Device specific part for two-stage boot
 PRODUCT_COPY_FILES += \
     device/sony/nanhu/recovery/bootrec-device:recovery/bootrec-device
