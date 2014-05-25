@@ -15,7 +15,6 @@ on post-fs-data
     chmod 0660 /sys/class/leds/lm3533-light-button/brightness
 
     insmod /system/lib/modules/cfg80211.ko
-    insmod /system/lib/modules/compat.ko
 
 on early-charger
     wait /dev/block/mmcblk0p2
