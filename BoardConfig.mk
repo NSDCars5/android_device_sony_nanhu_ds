@@ -58,7 +58,6 @@ TARGET_OTA_ASSERT_DEVICE := C1504,C1505,C1604,C1605,nanhu,nanhu_ds
 -PRODUCT_PROPERTY_OVERRIDES += ro.config.low_ram=true
 
 # Bluetooth
-BOARD_HAVE_BLUETOOTH_CSR := true
-TARGET_CUSTOM_BLUEDROID := ../../../device/sony/nanhu/bluedroid/bluetooth.c
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/nanhu/bluedroid
 
 TARGET_NO_HW_VSYNC := 
