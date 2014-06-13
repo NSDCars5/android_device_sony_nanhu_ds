@@ -45,9 +45,6 @@ WIFI_DRIVER_LOADER_DELAY := 1000000
 
 BOARD_SDCARD_INTERNAL_DEVICE := /dev/block/mmcblk0p17
 
-# Custom vibrator
-BOARD_HAS_VIBRATOR_IMPLEMENTATION := ../../device/sony/nanhu/vibrator/vibrator.c
-
 # RIL
 BOARD_USES_LEGACY_RIL := true
 BOARD_RIL_CLASS := ../../../device/sony/nanhu/ril/
