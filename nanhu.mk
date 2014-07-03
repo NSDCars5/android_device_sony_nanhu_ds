@@ -84,4 +84,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril.v3=skipnullaid,qcomdsds \
     ro.webview.gralloc_unbind=1
 
+# build missing packages manually
+PRODUCT_PACKAGES += \
+	ROMControl \
+	ThemesProvider \
+	ThemeChooser
+
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
