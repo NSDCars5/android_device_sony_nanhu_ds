@@ -1,0 +1,26 @@
+From ff24abcb44ffbc4ba95ca48afa9f41a08a12c120 Mon Sep 17 00:00:00 2001
+From: Naman Sood <mail@nsood.in>
+Date: Sat, 5 Jul 2014 10:26:04 +0530
+Subject: [PATCH] Fix ZIP-making error
+
+Change-Id: Iefdada3c2a5cbeebe26b3d41da66fb879a40c2c0
+---
+ core/Makefile | 2 --
+ 1 file changed, 2 deletions(-)
+
+diff --git a/core/Makefile b/core/Makefile
+index a4e4279..d4f7178 100644
+--- a/core/Makefile
++++ b/core/Makefile
+@@ -1429,8 +1429,6 @@ $(INTERNAL_OTA_PACKAGE_TARGET): $(BUILT_TARGET_FILES_PACKAGE) $(DISTTOOLS)
+ 	$(OTA_FROM_TARGET_SCRIPT) -v \
+ 	   -p $(HOST_OUT) \
+ 	   -k $(KEY_CERT_PAIR) \
+-	   --no_assert=$(skip_assert) \
+-	   --persist=$(persist) \
+ 	   --override_device=$(override_device) \
+ 	   --override_prop=$(override_prop) \
+ 	   $(separate_recovery) \
+-- 
+1.9.1
+
